@@ -96,6 +96,7 @@ document.getElementById('mloaikhachHang').addEventListener('change', function ()
 
     if (loaiKhachHang === 'doanhnnghiep') {
         inputKetNoi.style.display = 'block';
+        
     } else {
         inputKetNoi.style.display = 'none';
     }
@@ -105,19 +106,23 @@ document.querySelector('.btn-tinhtiencap').onclick = function () {
     var loaiKhachHang = document.getElementById('mloaikhachHang').value;
     var soKetNoi = document.getElementById('soKetNoi').value * 1;
     var soKenhCaoCap = document.getElementById('soKenhcaoCap').value * 1;
-    var tongTien = 0;
-    if (loaiKhachHang === 'doanhnnghiep') {
+    var phiXuLy, phiDichVuCoBan, phiThueKenhCaoCap = 0;
+    var tongTien;
+
+    if (loaiKhachHang === 'doanhnghiep') { 
         phiXuLy = 15;
         phiDichVuCoBan = 75;
-        phiThueKenhCaoCap = 50;
         phiDichVuCoBan = soKetNoi <= 10 ? phiDichVuCoBan : phiDichVuCoBan + (soKetNoi - 10) * 5;
-        return tongTien;
+        phiThueKenhCaoCap = soKenhCaoCap * 50; 
     } else {
         phiXuLy = 4.5;
         phiDichVuCoBan = 20.5;
         phiThueKenhCaoCap = soKenhCaoCap * 7.5;
     }
-    var tongTien = phiXuLy + phiDichVuCoBan + phiThueKenhCaoCap;
- document.getElementById('ketQua4').innerHTML =
-        "Mã khách hàng: " + maKhachHang + "\nLoại khách hàng: " + loaiKhachHang + "\nTổng tiền cáp: $ " + tongTien;
+
+    tongTien = phiXuLy + phiDichVuCoBan + phiThueKenhCaoCap;
+
+    document.getElementById('ketQua4').innerHTML =
+        "Mã khách hàng: " + maKhachHang + "Loại khách hàng: " + loaiKhachHang + "Tổng tiền cáp: $ " + tongTien.toFixed(2);
 };
+
