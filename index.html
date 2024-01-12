@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <style>
+            .container {
+                position: relative;
+            }
+            .container input {
+                width: 50%;
+                height: 40px;
+                border: 1px solid #ccc;
+                border-radius: 8px;
+                padding: 0 10px;
+            }
+            .container #khuVuc, .container #doiTuong{
+                width: 15.5%;
+                height: 40px;
+                border: 1px solid #ccc;
+                border-radius: 8px;
+                padding: 0 10px;
+                position: absolute;
+                bottom: 180px;
+                /* top: 0px; */
+            }
+            .container #mloaikhachHang{
+                width: 15.5%;
+                height: 40px;
+                border: 1px solid #ccc;
+                border-radius: 8px;
+                padding: 0 10px;
+                position: absolute;
+                bottom: 140px;
+            
+            }
+            #soKetNoi{
+                
+                display: none;
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Bài tập 1</h1>
+            <div class="row">
+                <div class="col-4">
+     <div class="mb-3">
+        <label for="" class="form-label"></label>
+        <input
+            type="number"
+            class="form-control"
+            name=""
+            id="diemChuan"
+            aria-describedby="helpId"
+            placeholder="Điểm Chuẩn"
+        />
+       </div>
+       </div>
+       <div class="col-4">
+       <div class="mb-3">
+        <label for="" class="form-label"></label>
+        <select id="khuVuc">
+            <option value="">Chọn khu vực</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+        </select>
+       </div>
+    </div>
+    <div class="col-4">
+       <div class="mb-3">
+        <label for="" class="form-label"></label>
+        <select id="doiTuong">
+            <option value="">Chọn đối tượng</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+       </div>
+    </div>
+    <div class="col-4">
+       <div class="mb-3">
+        <label for="" class="form-label"></label>
+        <input
+            type="number"
+            class="form-control"
+            name=""
+            id="diemMon1"
+            aria-describedby="helpId"
+            placeholder="Điểm môn 1"
+        />
+       </div>
+    </div>
+    <div class="col-4">
+       <div class="mb-3">
+        <label for="" class="form-label"></label>
+        <input
+            type="number"
+            class="form-control"
+            name=""
+            id="diemMon2"
+            aria-describedby="helpId"
+            placeholder="Điểm môn 2"
+        />
+       </div>
+    </div>
+    <div class="col-4">
+       <div class="mb-3">
+        <label for="" class="form-label"></label>
+        <input
+            type="text"
+            class="form-control"
+            name=""
+            id="diemMon3"
+            aria-describedby="helpId"
+            placeholder="Điểm Môn 3"
+        />
+       </div>
+    </div>
+       <div class="mb-3">
+        <button class="btn btn-kq" style="background-color: blue;" >Kết quả</button>
+    </div>
+    <div class="bg-dark text-white p-3" id="ketQua1">
+    </div>
+</div>
+     </div>
+    </div>
+</div>
+ <!-- Bài 2 -->
+<div class="container">
+    <h1>Bài tập 2</h1>
+    <div class="row">
+        <div class="col-6">
+    <div class="mb-3">
+        <label for="" class="form-label"></label>
+        <input
+            type="text"
+            class="form-control"
+            name=""
+            id="hoTen"
+            aria-describedby="helpId"
+            placeholder="Nhập họ tên"
+        />
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="mb-3">
+        <label for="" class="form-label"></label>
+        <input
+            type="number"
+            class="form-control"
+            name=""
+            id="soKW"
+            aria-describedby="helpId"
+            placeholder="Nhập số KW"
+        />
+      </div>
+    </div>
+      <div class="mb-3">
+      <button class="btn btn-tinhtien" style="background-color: aquamarine;">Tính tiền điện</button>
+    </div>
+    <div class="bg-dark text-white p-3" id="ketQua2">
+   </div>
+</div>
+</div>
+<!-- bài 3 -->
+<div class="container">
+    <h1>Bài tập 3</h1>
+    <div class="row">
+        <div class="col-4">
+    <div class="mb-3">
+        <label for="" class="form-label"></label>
+        <input
+            type="text"
+            class="form-control"
+            name=""
+            id="HoTen"
+            aria-describedby="helpId"
+            placeholder="Nhập họ tên"
+        />
+        </div>
+    </div>
+    <div class="col-4">
+        <div class="mb-3">
+            <label for="" class="form-label"></label>
+            <input
+                type="number"
+                class="form-control"
+                name=""
+                id="thuNhapNam"
+                aria-describedby="helpId"
+                placeholder="Tổng thu nhập năm"
+            />
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="mb-3">
+                <label for="" class="form-label"></label>
+                <input
+                    type="number"
+                    class="form-control"
+                    name=""
+                    id="soNguoi"
+                    aria-describedby="helpId"
+                    placeholder="Số người phụ thuộc"
+                />
+                </div>
+            </div>
+                <div class="mb-3">
+                    <button class="btn btn-tinhtienthue" style="background-color: aquamarine;">Tính tiền điện</button>
+                  </div>
+                  <div class="bg-dark text-white p-3" id="ketQua3">
+                 </div>
+</div>
+</div>
+<div class="container">
+    <h1>Bài tập 4</h1>
+<div class="row">
+    <div class="col-4">
+    <div class="mb-3">
+        <label for="" class="form-label"></label>
+        <select id="mloaikhachHang">
+            <option value="">Chọn loại khách hàng</option>
+            <option value="nhadan">Nhà dân</option>
+            <option value="doanhnnghiep" class="dn">Doanh nghiệp</option>
+        </select>
+    </div>
+</div>
+ <div class="col-4">
+    <div class="mb-3">
+        <label for="" class="form-label"></label>
+        <input
+            type="text"
+            class="form-control"
+            name=""
+            id="makhachHang" 
+            aria-describedby="helpId"
+            placeholder="Nhập mã khách hàng"
+        />
+    </div>
+</div>
+<div class="col-4">
+ <div class="mb-3">
+        <label for="" class="form-label"></label>
+        <input
+            type="text"
+            class="form-control"
+            name=""
+            id="soKenhcaoCap"
+            aria-describedby="helpId"
+            placeholder="Số kênh cao cấp"
+        />
+    </div>
+</div>
+<div class="mb-3">
+        <label for="" class="form-label"></label>
+        <input
+            type="text"
+            class="form-control"
+            name=""
+            id="soKetNoi"
+            aria-describedby="helpId"
+            placeholder="Số kết nối"
+        />
+    </div>
+</div>
+    <div class="mb-3">
+        <button class="btn btn-tinhtiencap" style="background-color: aquamarine;">Tính tiền cáp</button>
+    </div>
+
+    <div class="bg-dark text-white p-3" id="ketQua4"></div>
+</div>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+        <script src="index.js"></script>
+    </body>
+</html>
